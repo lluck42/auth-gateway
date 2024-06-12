@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"gq_volunteer_platform/bean"
-	"gq_volunteer_platform/model/admin"
+	"auth-gateway/bean"
+	"auth-gateway/model/admin"
 
 	"github.com/dchest/captcha"
 	"github.com/gin-gonic/gin"

@@ -1,8 +1,8 @@
 package main
 
 import (
+	"auth-gateway/bean"
 	"fmt"
-	"gq_volunteer_platform/bean"
 	"testing"
 	"time"
 )

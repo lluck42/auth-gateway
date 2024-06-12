@@ -27,6 +27,6 @@
 !/upload/test.txt
 !/upload/profile.png
 
-/gq_volunteer_platform_api
-/cmd/gq_volunteer_platform_api_cmd
+/auth-gateway_api
+/cmd/auth-gateway_api_cmd
 

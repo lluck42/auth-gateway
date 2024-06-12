@@ -1,10 +1,10 @@
 package admin
 
 import (
+	"auth-gateway/model"
 	"crypto/md5"
 	"errors"
 	"fmt"
-	"gq_volunteer_platform/model"
 	"io"
 	"strconv"
 	"time"

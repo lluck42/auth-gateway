@@ -1,9 +1,9 @@
 package route
 
 import (
-	"gq_volunteer_platform/controller"
-	"gq_volunteer_platform/controller/admin"
-	"gq_volunteer_platform/middleware"
+	"auth-gateway/controller"
+	"auth-gateway/controller/admin"
+	"auth-gateway/middleware"
 
 	"github.com/gin-gonic/gin"
 )

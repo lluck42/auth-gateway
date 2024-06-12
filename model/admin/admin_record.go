@@ -1,6 +1,6 @@
 package admin
 
-import "gq_volunteer_platform/model"
+import "auth-gateway/model"
 
 type AdminRecord struct {
 	ID        uint `gorm:"primarykey;->"`

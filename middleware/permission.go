@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"auth-gateway/bean"
+	"auth-gateway/model/admin"
 	"fmt"
-	"gq_volunteer_platform/bean"
-	"gq_volunteer_platform/model/admin"
 
 	"github.com/gin-gonic/gin"
 )

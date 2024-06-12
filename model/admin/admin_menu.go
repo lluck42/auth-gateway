@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"gq_volunteer_platform/model"
+	"auth-gateway/model"
 )
 
 type AdminMenu struct {

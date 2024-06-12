@@ -1,10 +1,10 @@
 package main
 
 import (
+	"auth-gateway/bean"
+	"auth-gateway/middleware"
+	"auth-gateway/route"
 	"fmt"
-	"gq_volunteer_platform/bean"
-	"gq_volunteer_platform/middleware"
-	"gq_volunteer_platform/route"
 	"net/http/httputil"
 	"net/url"
 

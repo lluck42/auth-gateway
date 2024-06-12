@@ -1,4 +1,4 @@
-module gq_volunteer_platform
+module auth-gateway
 
 go 1.20
 

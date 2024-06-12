@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80034 (8.0.34)
  Source Host           : 192.168.3.106:3306
- Source Schema         : gq_volunteer_platform
+ Source Schema         : auth-gateway
 
  Target Server Type    : MySQL
  Target Server Version : 80034 (8.0.34)
