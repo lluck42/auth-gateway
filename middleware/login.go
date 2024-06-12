@@ -3,6 +3,7 @@ package middleware
 import (
 	"gq_volunteer_platform/bean"
 	"gq_volunteer_platform/model/admin"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -28,4 +29,6 @@ func Login(c *gin.Context) {
 	}
 
 	c.Set("admin", one)
+
+	c.Request.Header.Add("auth-gateway-adminID", strconv.Itoa(int(one.ID)))
 }

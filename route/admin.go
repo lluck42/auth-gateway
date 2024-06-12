@@ -3,7 +3,6 @@ package route
 import (
 	"gq_volunteer_platform/controller"
 	"gq_volunteer_platform/controller/admin"
-	"gq_volunteer_platform/controller/config"
 	"gq_volunteer_platform/middleware"
 
 	"github.com/gin-gonic/gin"
@@ -43,14 +42,6 @@ func Admin(router *gin.Engine) {
 		adminGroup.GET("MenuDetail", admin.MenuDetail)
 		adminGroup.POST("MenuEdit", admin.MenuEdit)
 		adminGroup.POST("MenuDelete", admin.MenuDelete)
-	}
-
-	// config
-	configGroup := router.Group("config")
-	configGroup.Use(middleware.Record, middleware.Login, middleware.Permission)
-	{
-		configGroup.GET("Detail", config.Detail)
-		configGroup.POST("Edit", config.Edit)
 	}
 
 }
