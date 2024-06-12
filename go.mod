@@ -4,7 +4,6 @@ go 1.20
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/lluck42/tools v1.0.3
 	github.com/sirupsen/logrus v1.9.0
 	gorm.io/gorm v1.23.8
 )
@@ -18,10 +17,7 @@ require (
 	golang.org/x/arch v0.3.0 // indirect
 )
 
-require (
-	github.com/go-sql-driver/mysql v1.7.0 // indirect
-	github.com/google/uuid v1.3.0
-)
+require github.com/go-sql-driver/mysql v1.7.0 // indirect
 
 require (
 	github.com/dchest/captcha v1.0.0
