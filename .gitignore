@@ -27,6 +27,5 @@
 !/upload/test.txt
 !/upload/profile.png
 
-/auth-gateway_api
-/cmd/auth-gateway_api_cmd
+/auth-gateway
 
