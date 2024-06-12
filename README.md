@@ -16,6 +16,7 @@ config.yml 是配置文件，填写所需代理的后端地址
 其他地址可用
 
 没有被注册的路由地址会走反向代理
+header 中有 adminID 可用于业务
 
 #### 软件架构
 gin + gorm + mysql
