@@ -1,0 +1,14 @@
+app:
+  addr: 192.168.3.106:3000
+  setmode: debug
+mysql:
+  host: 192.168.3.106
+  port: 3306
+  username: gq_volunteer_platform
+  password: Hnsjb_106
+  database: gq_volunteer_platform
+  parsetime: false
+  debug: true
+ReverseProxy:
+  Scheme: http
+  Host: 127.0.0.1:8000

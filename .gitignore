@@ -1,0 +1,32 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# 日志文件
+/*.log
+/cmd/*.log
+# 配置文件
+/config.yml
+/cmd/config.yml
+# air 热重载缓存文件
+/tmp
+# 文件上传
+/upload/*
+!/upload/test.txt
+!/upload/profile.png
+
+/gq_volunteer_platform_api
+/cmd/gq_volunteer_platform_api_cmd
+
