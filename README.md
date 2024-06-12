@@ -23,4 +23,14 @@ gin + gorm + mysql
 
 
 #### 安装教程
-git clone https://gitee.com/lluck42/gq_volunteer_platform.git
+git clone https://gitee.com/lluck42/auth-gateway
+
+导入 admin.sql
+
+mv config-demo.yml config.yml
+
+配置 config.yml 配置文件，填入 mysql 账号密码，需要反向代理的协议、地址
+
+go run .
+
+备注：header 中有 adminID 可用于业务
