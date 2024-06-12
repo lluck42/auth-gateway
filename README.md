@@ -1,13 +1,19 @@
 # auth-gateway
 
 #### 介绍
+
 auth gateway
+
 登录、权限认证 http 网关
+
 附带后台 RBAC 权限管理接口
+
 验证通过后 通过 http 反向代理方式请求后端服务
 
 admin.sql 是数据库文件
+
 config.yml 是配置文件，填写所需代理的后端地址
+
 
 1、管理员模块
 2、登录模块
