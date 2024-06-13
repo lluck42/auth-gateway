@@ -36,11 +36,15 @@ func main() {
 
 	router.MaxMultipartMemory = 200 << 20 // 上传文件大小限制 200 MiB
 
+	// 静态文件服务
+	router.Static("/html", "html") // 服务静态文件 相对路径为 项目启动时 用户所在目录
+
 	// 管理端路由
 	route.Admin(router)
 	// 反向代理 后端的服务
 	router.NoRoute(middleware.Record, middleware.Login, middleware.Permission, func(c *gin.Context) {
 		fmt.Println("router.NoRoute")
+		fmt.Println(c.Request.URL.Path)
 		proxy := httputil.NewSingleHostReverseProxy(&url.URL{
 			Scheme: bean.Config.ReverseProxy.Scheme,
 			Host:   bean.Config.ReverseProxy.Host,

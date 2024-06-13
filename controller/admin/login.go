@@ -47,7 +47,7 @@ func Login(c *gin.Context) {
 	// 请求记录
 	var rec admin.AdminRecord
 	rec.Method = c.Request.Method
-	rec.ApiPath = c.FullPath()
+	rec.ApiPath = c.Request.URL.Path
 	rec.Ip = c.ClientIP()
 	rec.AdminName = "尝试登录账号：" + req.Mobile
 	if err := bean.MysqlDb.Save(&rec).Error; err != nil {

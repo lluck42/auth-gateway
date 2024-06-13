@@ -14,7 +14,7 @@ func Record(c *gin.Context) {
 	// 获取登录用户对象
 	var adm admin.Admin
 	if err := adm.Get(c); err != nil {
-		bean.Log.Error(c.FullPath())
+		bean.Log.Error(c.Request.URL.Path)
 		bean.Log.Error(err)
 		return
 	}
@@ -25,7 +25,7 @@ func Record(c *gin.Context) {
 		rec.AdminID = adm.ID
 		rec.AdminName = adm.Name
 		rec.Method = c.Request.Method
-		rec.ApiPath = c.FullPath()
+		rec.ApiPath = c.Request.URL.Path
 		rec.Ip = c.ClientIP()
 
 		if err := bean.MysqlDb.Save(&rec).Error; err != nil {
