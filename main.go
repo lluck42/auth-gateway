@@ -53,5 +53,7 @@ func main() {
 		proxy.ServeHTTP(c.Writer, c.Request)
 	})
 
+	fmt.Println("请打开网关管理页面进行配置：http:" + bean.Config.App.Addr + "/html")
+
 	router.Run(bean.Config.App.Addr) // listen and serve on 0.0.0.0:8080
 }
